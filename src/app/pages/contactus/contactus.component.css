@@ -1,0 +1,135 @@
+/* General Reset */
+body, h1, h2, p, ul, form {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-section {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.contact-form, .social-media {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2, .social-media h2 {
+  font-size: 1.8rem;
+  color: #ff5722;
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.btn-submit {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e64a19;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  margin-bottom: 10px;
+}
+
+.social-media ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media ul li a:hover {
+  color: #ff5722;
+}
+
+.social-media ul li i {
+  font-size: 1.5rem;
+}
+
+.map-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-section h2 {
+  font-size: 1.8rem;
+  color: #ff5722;
+  margin-bottom: 15px;
+}
+
+iframe {
+  border-radius: 10px;
+  border: none;
+}

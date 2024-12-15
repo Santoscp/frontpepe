@@ -1,0 +1,22 @@
+<div class="login-container">
+  <div class="login-header">
+    <h2>Welcome Back!</h2>
+    <p>Please login to continue</p>
+  </div>
+  <form (ngSubmit)="login()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="Enter your username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Enter your password" required>
+    </div>
+    <div class="form-group">
+      <label for="dni">DNI</label>
+      <input type="text" id="dni" [(ngModel)]="dni" name="dni" placeholder="Enter your DNI" required>
+    </div>
+    <div @if(errormessage) class="error">{{ errorMessage }}</div>
+    <button type="submit" class="btn-submit">Login</button>
+  </form>
+</div>

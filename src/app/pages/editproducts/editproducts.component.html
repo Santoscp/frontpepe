@@ -1,0 +1,37 @@
+<!-- Página para editar los productos, con un apartado de búsqueda de productos y al encontrar el producto editarlo -->
+
+<div>
+  <h2>Editar Productos</h2>
+
+  <!-- Campo de búsqueda -->
+  <div class="form-group">
+    <label for="searchInput">Buscar Producto:</label>
+    <input #searchInput type="text" class="form-control" id="searchInput"  placeholder="Introduce el nombre del producto">
+  </div>
+
+  <div @if(errorMessage)>{{ errorMessage }}</div>
+
+  <!-- Tabla de resultados de búsqueda -->
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    @for(product of $search | async;track product.id){
+      <tr>
+        <th><h5 class="card-title">{{product.nombre}}</h5></th>
+        <th><p class="card-text">{{product.precio}}</p></th>
+        <th>
+          <button class="btn btn-primary" (click)="editProduct(product)">Editar</button>
+          <button class="btn btn-danger" (click)="deleteProduct(product)">Eliminar</button>
+        </th>
+      </tr>
+    }
+
+    </tbody>
+  </table>
+</div>

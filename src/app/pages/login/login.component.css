@@ -1,0 +1,82 @@
+/* Container Styling */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-header h2 {
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 2rem;
+}
+
+.login-header p {
+  color: #777;
+  font-size: 1rem;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  background: #fff;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Button Styling */
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-submit:active {
+  background-color: #004494;
+  transform: scale(1);
+}
